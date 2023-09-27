@@ -1,8 +1,8 @@
-# Flask-RESTful API  Insurnace project
+# Flask-RESTful API  Insurance project
 
-This project shows one of the possible ways to implement RESTful API server for isnurance application.
+This project shows one of the possible ways to implement a RESTful API server for insurance applications.
 
-There are implemented two models: user_data and cart_data, one user can have many insurnaces.
+There are implemented two models: user_data and cart_data, one user can have many insurances.
 
 Main libraries used:
 1. Flask-PyMongo - for handling all MongoDB database operations.
@@ -22,15 +22,15 @@ Project structure:
 
 * app.py - holds all endpoints.
 * app.py - flask application initialization.
-* samplerates.csv - all csv data for parsing.
-* helper.py - for supporting functions and helper functions for api actions
+* samplerates.csv - all CSV data for parsing.
+* helper.py - for supporting functions and helper functions for API actions
 
 ## Running 
 
 1. Clone repository.
 2. pip install requirements.txt
 3. Run the flask app.py
-4. use postman for accessing the API endpoints
+4. Use Postman for accessing the API endpoints
 
 ## Usage
 ### Users endpoint
