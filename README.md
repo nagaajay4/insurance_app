@@ -101,6 +101,7 @@ REQUEST
 RESPONSE
 ```json
 {
+    "Total": 33395.0,
     "cart_data": [
         {
             "age_range": "23",
