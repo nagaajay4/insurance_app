@@ -1,0 +1,30 @@
+name: Deploy to Heroku
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Heroku CLI
+        run: |
+          curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+          heroku --version
+
+      - name: Log in to Heroku
+        run: heroku login -i
+
+      - name: Deploy to Heroku
+        run: |
+          heroku create insurnace-app
+          git push heroku main
+
+      - name: Open app in browser
+        run: heroku open
