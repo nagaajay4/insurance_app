@@ -174,4 +174,4 @@ GET http://127.0.0.1:5000/get_all_user_data
   ]
 }
 ```
-All are JSON data, please same field names only.
+All are JSON data, please use the same field names only.
